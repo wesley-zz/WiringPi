@@ -9,6 +9,6 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS True)
 
 include_directories(${PROJECT_SOURCE_DIR}/wiringPi)
 aux_source_directory(${PROJECT_SOURCE_DIR}/wiringPi wiringPi_SRCS)
-message(STATUS "wiringPi_SRCS = " ${wiringPi_SRCS})
+# message(STATUS "wiringPi_SRCS = " ${wiringPi_SRCS})
 add_library(wiringPi ${wiringPi_SRCS})
 add_definitions("-Wall -g")
